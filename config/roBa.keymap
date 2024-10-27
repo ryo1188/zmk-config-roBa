@@ -63,21 +63,21 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                      &kp T                                               &kp Y            &kp U  &lt 1 I    &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &kp DELETE       &kp MINUS             &kp H            &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Q      &kp W         &kp E         &kp R                      &kp T                                               &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                      &kp G        &kp DELETE       &kp MINUS             &kp H            &kp J  &kp K      &kp L    &lt 4 SEMICOLON
 &kp Z      &kp X         &kp C         &kp V                      &kp B        &kp SQT          &kp EQUAL             &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 LEFT_ALT  &lt 1 SPACE  &mt LCTRL F15    &mt LEFT_SHIFT ENTER  &lt 3 BACKSPACE                             &kp LEFT_WIN
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans        &trans    &trans                          &kp GRAVE      &kp PAGE_UP       &kp UP_ARROW       &kp PAGE_DOWN  &trans
-&trans  &trans  &mkp MB2      &mkp MB1  &trans  &trans          &trans  &kp HOME       &kp LEFT          &kp DOWN           &kp RIGHT      &kp END
-&trans  &trans  &kp LEFT_ALT  &kp TAB   &trans  &kp LEFT_WIN    &trans  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
-&trans  &trans  &trans        &trans    &trans  &trans          &trans  &trans                                                             &trans
+&kp LA(F4)  &kp LC(W)  &kp LG(E)     &kp LC(R)  &kp LC(T)                          &kp GRAVE      &kp PAGE_UP       &kp UP_ARROW       &kp PAGE_DOWN  &trans
+&kp LC(A)   &kp LC(S)  &kp LEFT_ALT  &kp TAB    &kp ESC    &trans          &trans  &kp HOME       &kp LEFT          &kp DOWN           &kp RIGHT      &kp END
+&kp LC(Z)   &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans     &kp LEFT_WIN    &trans  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
+&trans      &trans     &trans        &trans     &trans     &trans          &trans  &trans                                                             &trans
             >;
         };
 
@@ -96,6 +96,24 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &kp F12
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                              &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
     };
