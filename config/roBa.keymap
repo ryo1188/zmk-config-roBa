@@ -107,10 +107,10 @@
             layers = <1>;
         };
 
-        lctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <13 12 11>;
-            layers = <1>;
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <13 18 12 19>;
+            layers = <0>;
         };
     };
 
