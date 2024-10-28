@@ -57,6 +57,48 @@
             key-positions = <13 12 11>;
             layers = <0>;
         };
+
+        lkako {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        rkako {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        asuta {
+            bindings = <&kp ASTERISK>;
+            key-positions = <13 18>;
+            layers = <0>;
+        };
+
+        pa-sent {
+            bindings = <&kp PERCENT>;
+            key-positions = <3 6>;
+            layers = <0>;
+        };
+
+        ex {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        hash {
+            bindings = <&kp POUND>;
+            key-positions = <1 2 3>;
+            layers = <0>;
+        };
+
+        and {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <14 17>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -66,6 +108,7 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
         // 新しいスクロール動作の追加
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -106,19 +149,19 @@
 
         SCROLL {
             bindings = <
-&kp LA(F4)  &kp LC(W)  &kp LG(E)     &kp LC(R)  &kp LC(T)                          &kp GRAVE      &kp PAGE_UP       &kp UP_ARROW       &kp PAGE_DOWN  &trans
-&kp LC(A)   &kp LC(S)  &kp LEFT_ALT  &kp TAB    &kp ESC    &trans          &trans  &kp HOME       &kp LEFT          &kp DOWN           &kp RIGHT      &kp END
-&kp LC(Z)   &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans     &kp LEFT_WIN    &trans  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
-&trans      &trans     &trans        &trans     &trans     &trans          &trans  &trans                                                             &trans
+&kp LA(F4)  &kp LC(W)  &kp LG(E)     &kp LC(R)  &kp LC(T)                             &kp GRAVE      &kp PAGE_UP       &kp UP_ARROW       &kp PAGE_DOWN  &trans
+&kp LC(A)   &kp LC(S)  &kp LEFT_ALT  &kp TAB    &kp ESC    &trans         &kp DOLLAR  &kp HOME       &kp LEFT          &kp DOWN           &kp RIGHT      &kp END
+&kp LC(Z)   &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans     &kp AT_SIGN    &kp CARET   &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
+&trans      &trans     &trans        &trans     &trans     &trans         &trans      &trans                                                             &trans
             >;
         };
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans    &trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0
-&trans  &trans        &bootloader   &trans        &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans  &trans    &trans  &kp LEFT_WIN                                            &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans                          &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans    &trans        &kp NUMBER_6    &kp N7        &kp N8        &kp N9        &kp N0
+&trans  &trans        &bootloader   &trans        &trans  &trans    &trans        &trans          &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans  &trans    &kp LEFT_WIN  &kp LEFT_SHIFT                                            &bt BT_CLR_ALL
             >;
         };
 
