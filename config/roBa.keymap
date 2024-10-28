@@ -33,13 +33,34 @@
             key-positions = <20 21>;
             layers = <0>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 18>;
+            layers = <0>;
+        };
+
+        bc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 19 20>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 12>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 12 11>;
+        };
     };
 
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&kp LPAR &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
 
