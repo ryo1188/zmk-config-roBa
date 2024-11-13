@@ -63,6 +63,7 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <2 3>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         rkako {
