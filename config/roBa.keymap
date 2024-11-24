@@ -63,25 +63,28 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <2 3>;
             layers = <0>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
         };
 
         rkako {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <6 7>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         asuta {
             bindings = <&kp ASTERISK>;
             key-positions = <13 18>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         pa-sent {
             bindings = <&kp PERCENT>;
             key-positions = <3 6>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         ex {
@@ -100,6 +103,7 @@
             bindings = <&kp AMPERSAND>;
             key-positions = <14 17>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         shift {
