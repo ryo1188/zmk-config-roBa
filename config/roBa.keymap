@@ -181,7 +181,7 @@
 &trans           &trans           &trans           &trans           &trans                             &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans    &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
 &trans           &trans           &bootloader      &trans           &trans           &trans    &trans  &trans           &trans           &trans           &trans           &trans
-&trans           &trans           &trans           &trans           &trans           &trans    &trans  &to 5                                                               &bt BT_CLR_ALL
+&trans           &trans           &trans           &trans           &trans           &trans    &trans  &mo 5                                                               &bt BT_CLR_ALL
             >;
         };
 
