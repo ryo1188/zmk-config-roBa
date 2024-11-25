@@ -63,14 +63,14 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <2 3>;
             layers = <0>;
-            require-prior-idle-ms = <10>;
+            require-prior-idle-ms = <5>;
         };
 
         rkako {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <6 7>;
             layers = <0>;
-            require-prior-idle-ms = <10>;
+            require-prior-idle-ms = <5>;
         };
 
         asuta {
@@ -84,7 +84,7 @@
             bindings = <&kp PERCENT>;
             key-positions = <3 6>;
             layers = <0>;
-            require-prior-idle-ms = <10>;
+            require-prior-idle-ms = <5>;
         };
 
         ex {
@@ -178,10 +178,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                          &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans    &trans        &kp NUMBER_6    &kp N7        &kp N8        &kp N9        &kp N0
-&trans  &trans        &bootloader   &trans        &trans  &trans    &trans        &trans          &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans  &trans    &kp LEFT_WIN  &kp LEFT_SHIFT                                            &bt BT_CLR_ALL
+&trans           &trans           &trans           &trans           &trans                             &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans    &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&trans           &trans           &bootloader      &trans           &trans           &trans    &trans  &trans           &trans           &trans           &trans           &trans
+&trans           &trans           &trans           &trans           &trans           &trans    &trans  &to 5                                                               &bt BT_CLR_ALL
             >;
         };
 
@@ -207,10 +207,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans            &trans            &trans            &trans            &trans                        &trans            &trans      &trans      &trans      &trans
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)  &trans    &trans  &kp LG(NUMBER_6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
+&trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans                                                &trans
             >;
         };
     };
