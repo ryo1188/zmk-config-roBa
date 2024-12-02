@@ -82,7 +82,7 @@
 
         pa-sent {
             bindings = <&kp PERCENT>;
-            key-positions = <3 6>;
+            key-positions = <7 8>;
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
@@ -115,6 +115,12 @@
         del {
             bindings = <&kp DELETE>;
             key-positions = <25 30>;
+            layers = <0>;
+        };
+
+        app {
+            bindings = <&kp K_APP>;
+            key-positions = <30 31>;
             layers = <0>;
         };
     };
