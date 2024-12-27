@@ -1,7 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -60,15 +62,8 @@
         };
 
         lkako {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <2 3>;
-            layers = <0>;
-            require-prior-idle-ms = <5>;
-        };
-
-        rkako {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <6 7>;
+            bindings = <&kakko>;
+            key-positions = <2 3 6 7>;
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
@@ -133,6 +128,13 @@
             label = "TO_LAYER_0";
         };
 
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "KAKKO";
+        };
+
         // 新しいスクロール動作の追加
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -163,9 +165,9 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                      &kp T                                               &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &kp DELETE       &kp MINUS             &kp H            &kp J  &kp K      &kp L    &lt 4 SEMICOLON
-&kp Z      &kp X         &kp C         &kp V                      &kp B        &kp SQT          &kp EQUAL             &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 LEFT_ALT  &lt 1 SPACE  &mt LCTRL F15    &mt LEFT_SHIFT ENTER  &lt 3 BACKSPACE                             &kp LEFT_WIN
+&kp A      &kp S         &kp D         &kp F                      &kp G        &kp DELETE            &kp MINUS        &kp H            &kp J  &kp K      &kp L    &lt 4 SEMICOLON
+&kp Z      &kp X         &kp C         &kp V                      &kp B        &lt 4 SQT             &kp EQUAL        &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 LEFT_ALT  &lt 1 SPACE  &mt LEFT_SHIFT F15    &mt LCTRL ENTER  &lt 3 BACKSPACE                             &kp LEFT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
