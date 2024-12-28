@@ -121,13 +121,6 @@
             label = "TO_LAYER_0";
         };
 
-        kakko: kakko {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
-            label = "KAKKO";
-        };
-
         // 新しいスクロール動作の追加
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
