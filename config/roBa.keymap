@@ -61,13 +61,6 @@
             layers = <0>;
         };
 
-        lkako {
-            bindings = <&kakko>;
-            key-positions = <2 3 6 7>;
-            layers = <0>;
-            require-prior-idle-ms = <5>;
-        };
-
         asuta {
             bindings = <&kp ASTERISK>;
             key-positions = <13 18>;
