@@ -2,7 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -120,14 +119,14 @@
             label = "TO_LAYER_0";
         };
 
-        // V‚µ‚¢ƒXƒNƒ[ƒ‹“®ì‚Ì’Ç‰Á
+        // æ–°ã—ã„ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«å‹•ä½œã®è¿½åŠ 
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-            // ’Ç‰Á: ƒXƒNƒ[ƒ‹‚Ìƒ^ƒbƒvŠÔ‚ğİ’è (20ms)
+            // è¿½åŠ : ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã®ã‚¿ãƒƒãƒ—æ™‚é–“ã‚’è¨­å®š (20ms)
 
             tap-ms = <20>;
         };
