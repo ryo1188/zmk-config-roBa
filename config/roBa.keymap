@@ -2,6 +2,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -92,12 +94,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        shift {
-            bindings = <&kakko>;
-            key-positions = <2 3 6 7>;
-            layers = <1>;
-        };
-
         del {
             bindings = <&kp DELETE>;
             key-positions = <25 30 24 31>;
@@ -177,10 +173,10 @@
 
         layer_6 {
             bindings = <
-&trans           &trans           &trans           &trans           &trans                             &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans    &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&trans           &trans           &bootloader      &trans           &trans           &trans    &trans  &trans           &trans           &trans           &trans           &trans
-&trans           &trans           &trans           &trans           &trans           &trans    &trans  &mo 5                                                               &bt BT_CLR_ALL
+&trans           &trans           &trans           &trans           &trans                             &bt BT_SEL 0     &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3     &bt BT_SEL 4
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans    &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7       &kp KP_NUMBER_8        &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&trans           &trans           &bootloader      &trans           &trans           &trans    &trans  &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans           &trans
+&trans           &trans           &trans           &trans           &trans           &trans    &trans  &mo 5                                                                          &bt BT_CLR_ALL
             >;
         };
 
