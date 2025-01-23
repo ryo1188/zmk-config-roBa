@@ -2,6 +2,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -108,6 +110,31 @@
             bindings = <&kp DELETE>;
             key-positions = <26 27>;
         };
+
+        win1 {
+            bindings = <&kp LG(N1)>;
+            key-positions = <39 18>;
+        };
+
+        win2 {
+            bindings = <&kp LG(NUMBER_2)>;
+            key-positions = <39 19>;
+        };
+
+        win3 {
+            bindings = <&kp LG(NUMBER_3)>;
+            key-positions = <39 20>;
+        };
+
+        win5 {
+            bindings = <&kp LG(N5)>;
+            key-positions = <39 30>;
+        };
+
+        win6 {
+            bindings = <&kp LG(NUMBER_6)>;
+            key-positions = <39 31>;
+        };
     };
 
     macros {
@@ -198,7 +225,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                               &trans     &msc SCRL_UP  &trans     &msc SCRL_DOWN  &trans
 &trans        &trans        &kp LEFT_SHIFT  &kp LCTRL     &trans        &trans               &trans  &trans     &mkp MB1      &mkp MB2   &trans          &trans
-&trans        &trans        &trans          &trans        &trans        &kp LA(LS(LCTRL))    &trans  &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans          &trans
+&trans        &trans        &trans          &trans        &kp LC(W)     &kp LA(LS(LCTRL))    &trans  &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans          &trans
 &trans        &trans        &trans          &trans        &trans        &trans               &trans  &trans                                              &trans
             >;
         };
